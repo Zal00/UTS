@@ -1,3 +1,4 @@
+//08-05-2020 - 15-05-2020 10117191-RizalMaulana-IF5
 package com.apps.rizalmaulana.splashscreen;
 
 import android.app.Dialog;

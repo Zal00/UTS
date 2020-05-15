@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    card_view:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/bgnavbar">
+
+    <ImageView
+        android:id="@+id/icon_item"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/code"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginLeft="16dp"
+         android:layout_alignTop="@id/icon_item"
+         android:layout_toRightOf="@id/icon_item"
+         android:layout_toEndOf="@id/icon_item">
+
+         <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+             android:layout_marginTop="15dp"
+             android:padding="2dp"
+             android:ellipsize="end"
+             android:text="Judul"
+             android:textStyle="bold"
+            android:textColor="@color/tittlewhite" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:padding="2dp"
+        android:text="Deskripsi"
+        android:ellipsize="end"
+        android:textColor="@color/tittlewhite60"/>
+
+     </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

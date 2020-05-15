@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@color/toolbar"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="73dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/fb"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignTop="@+id/logo"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/logo"
+        android:layout_toRightOf="@+id/logo"
+        android:textColor="@color/tittlewhite60"
+        android:gravity="left|center"
+        android:text="Aplikasi V1.1 - By.Rizal Maulana"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_alignEnd="@+id/dialog"
+        android:layout_alignRight="@+id/dialog"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/btn_circle"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"
+        android:text="OK" />
+
+</RelativeLayout>

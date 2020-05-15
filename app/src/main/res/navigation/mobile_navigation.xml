@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.apps.rizalmaulana.splashscreen.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_daily"
+        android:name="com.apps.rizalmaulana.splashscreen.ui.daily.DailyFragment"
+        android:label="Daily Activity"
+        tools:layout="@layout/fragment_daily" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.apps.rizalmaulana.splashscreen.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery"/>
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.apps.rizalmaulana.splashscreen.ui.music.MusicFragment"
+        android:label="@string/menu_music"
+        tools:layout="@layout/fragment_musik" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.apps.rizalmaulana.splashscreen.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account"/>
+
+</navigation>

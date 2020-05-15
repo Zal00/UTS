@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    card_view:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:background="@color/bgnavbar">
+
+        <ImageView
+            android:id="@+id/icon_activity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/code"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@id/icon_activity"
+            android:layout_toRightOf="@id/icon_activity"
+            android:layout_toEndOf="@id/icon_activity">
+
+            <TextView
+                android:id="@+id/nama_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:ellipsize="end"
+                android:text="Judul"
+                android:textStyle="bold"
+                android:textColor="@color/tittlewhite" />
+
+            <TextView
+                android:id="@+id/desc_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:padding="2dp"
+                android:text="Deskripsi"
+                android:ellipsize="end"
+                android:textColor="@color/tittlewhite60"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jam"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/lin"
+            android:layout_marginLeft="18dp"
+            android:layout_toEndOf="@id/lin"
+            android:gravity="center"
+            android:layout_alignTop="@id/icon_activity"
+            android:textColor="@color/tittlewhite"
+            android:textSize="20sp"
+            android:text="03:00" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

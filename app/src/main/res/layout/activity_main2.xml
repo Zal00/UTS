@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@color/toolbar">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/SlideViewPager"
+        android:layout_width="359dp"
+        android:layout_height="507dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dotslayout"
+        android:layout_width="51dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SlideViewPager"
+        android:layout_marginStart="69dp"
+        android:layout_toEndOf="@id/prev_btn"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button
+        android:id="@+id/prev_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/SlideViewPager"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@id/SlideViewPager"
+        android:layout_marginStart="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/dotslayout"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_below="@id/SlideViewPager"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/dotslayout"
+        android:background="@android:color/transparent"
+        android:text="Finish"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>

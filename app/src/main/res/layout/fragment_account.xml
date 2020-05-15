@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.rizalmaulana.splashscreen.ui.account.AccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mea"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Rizal Maulana"
+        android:textColor="@color/tittlewhite"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="126dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fb"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circle"
+            android:clickable="true"
+            android:src="@drawable/ic_fb1" />
+
+        <ImageView
+            android:id="@+id/ig"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circle"
+            android:src="@drawable/ic_ig" />
+
+        <ImageView
+            android:id="@+id/maps"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circle"
+            android:src="@drawable/ic_maps" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="About"
+        android:textColor="@color/tittlewhite60"
+        android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/tittlewhite"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Contact Me" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tittlewhite60"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="No Hp : 082124129229" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/tittlewhite60"
+                android:gravity="center"
+                android:text="Email : rzma221@gmail.com" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

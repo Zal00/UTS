@@ -1,3 +1,4 @@
+//12-05-2020 10117191-RizalMaulana-IF5
 package com.apps.rizalmaulana.splashscreen.adapter;
 
 import android.provider.ContactsContract;

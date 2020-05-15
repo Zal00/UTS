@@ -1,3 +1,4 @@
+//15-05-2020 10117191-RizalMaulana-IF5
 package com.apps.rizalmaulana.splashscreen.ui.home;
 
 import android.os.Bundle;

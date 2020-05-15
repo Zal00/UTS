@@ -1,3 +1,5 @@
+//07-05-2020 10117191-Rizal Maulana- IF5
+
 package com.apps.rizalmaulana.splashscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
